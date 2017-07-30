@@ -1,0 +1,15 @@
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+*.iml
+.idea/
+java_pid1084.hprof
+java_pid*.hprof
+sh.exe.stackdump
+
+/keystore.properties
+/extras/key/*.keystore

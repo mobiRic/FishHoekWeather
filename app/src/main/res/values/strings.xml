@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fish Hoek Weather</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_view_on_web">View on Web</string>
+
+    <!-- AUTO REFRESH SPINNER -->
+    <string name="refresh_options">Refresh Options</string>
+    <string name="auto_refresh_off">Manual</string>
+    <string name="auto_refresh_5min">Auto</string>
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ABOUT BOX -->
+    <string name="action_about">About</string>
+    <string name="about_app">Fish Hoek Weather provides live updates direct from the Fish Hoek Beach Sailing Club.
+\n\n
+With this app you can always find the perfect conditions for surfskiing, sailing, or simply taking your dog for a walk.</string>
+    <string name="about_developers">Designed and developed by Glowworm Software</string>
+    <string name="about_glowworm_url">http://www.glowworm.mobi</string>
+    <!-- <string name="about_sounds">Sounds by Free SFX</string> -->
+    <!-- <string name="about_sounds_url">http://www.freesfx.co.uk/</string> -->
+    <!-- <string name="about_images">Images by Juan Álvarez</string> -->
+    <!-- <string name="about_images_url">http://gianferdinand.deviantart.com/art/Animales-vectorizados-EPS-383868974</string> -->
+    <!-- <string name="about_licenses">Credits &amp; Licences</string> -->
+    <!-- <string name="about_copyright">\u00A9 2014 Glowworm Software</string> -->
+    <string name="about_version_format">Version %s \u00A9 2014–17 Glowworm Software</string>
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- LINEAR LAYOUT WEIGHTS FOR THE 2 COLUMNS IN LANDSCAPE MODE -->
+    <!-- These get overridden in the different values-xxx folders -->
+
+    <integer name="landscape_column_weight_left">1</integer>
+    <integer name="landscape_column_weight_right">2</integer>
+
+</resources>

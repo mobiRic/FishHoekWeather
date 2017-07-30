@@ -1,0 +1,55 @@
+TITLE:
+------
+
+Fish Hoek Weather
+
+
+SHORT DESCRIPTION:
+------------------
+
+LIVE weather updates from Fish Hoek beach
+
+
+LONG DESCRIPTION:
+-----------------
+
+Get LIVE weather updates direct from Fish Hoek beach.
+
+Swipe left & right to view Wind, Temperature, Barometer and Rain readings.
+
+Set app to refresh automatically in the settings menu. This way you will always have up to date readings when you open the app.
+
+
+Coming soon:
+&#8226;&#8195;help screen for first time users
+&#8226;&#8195;widget to display Live Weather on your Home screen
+
+
+LONG DESCRIPTION:
+-----------------
+
+Get LIVE weather updates direct from Fish Hoek beach.
+
+Swipe left & right to view Wind, Temperature, Barometer and Rain readings.
+
+Set app to refresh automatically in the settings menu. This way you will always have up to date readings when you open the app.
+
+
+Coming soon:
+  - help screen for first time users
+  - widget to display Live Weather on your Home screen
+
+
+PRIVACY POLICY:
+---------------
+
+https://googledrive.com/host/0B2Rk89VFRrWuWVRlT2x5VmF0QlU
+
+
+WHAT'S NEW:
+-----------
+
+LIVE weather updates from Fish Hoek beach.
+
+v 1.0.3
+  - bugfix

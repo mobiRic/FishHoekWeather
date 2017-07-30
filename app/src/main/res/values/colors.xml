@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="thermometer_red">#fb0000</color>
+    <color name="rain_blue">#1ab6d7</color>
+    <color name="meter_background_grey">#ccc</color>
+    <color name="holo_blue_dark">#0099cc</color>
+    <color name="zoom_image_background_grey">#55000000</color>
+
+    <!-- ABOUT BOX -->
+    <color name="white_alpha_aa">#aafdfdfd</color>
+    <color name="gold">#ffcc33</color>
+    <color name="translucent_gold_divider">#4fffcc33</color>
+
+</resources>

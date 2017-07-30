@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- text to display for each option -->
+    <string-array name="auto_refresh_entries">
+        <item>@string/auto_refresh_off</item>
+        <item>@string/auto_refresh_5min</item>
+    </string-array>
+
+    <!-- framework requires this to be a string array if used in adapter with auto_refresh_entries -->
+    <integer-array name="auto_refresh_values">
+        <item>-1</item>
+        <item>300000</item>
+    </integer-array>
+
+</resources>

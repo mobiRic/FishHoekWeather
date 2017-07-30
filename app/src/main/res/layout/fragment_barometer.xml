@@ -1,0 +1,132 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- MAIN VIEW -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/scrollview_fade_pad"
+        android:paddingTop="@dimen/scrollview_fade_pad"
+        android:requiresFadingEdge="vertical"
+        tools:context=".fragments.BarometerFragment"
+        tools:ignore="UnusedAttribute" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/scrollview_content_pad"
+            android:paddingTop="@dimen/scrollview_content_pad" >
+
+            <RelativeLayout
+                android:id="@+id/layoutBarometerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" >
+
+                <TextView
+                    android:id="@+id/tvBarometerTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Pressure is "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvBarometerPressure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvBarometerTitle"
+                    android:layout_alignBottom="@+id/tvBarometerTitle"
+                    android:layout_toRightOf="@+id/tvBarometerTitle"
+                    android:text="1010.5 mbar"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/layoutArrowBarometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/barometer" >
+
+                <ImageView
+                    android:id="@+id/ivArrowBarometer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_barometer"
+                    tools:ignore="ContentDescription" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="24 hour barometer"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <ImageView
+                android:id="@+id/ivDayBarometer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/daybarometer"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="7 day barometer"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <ImageView
+                android:id="@+id/ivWeekBarometer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/weekbarometer"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- ZOOMED IMAGE VIEW -->
+    <!-- This initially-hidden ImageView will hold the expanded/zoomed version of -->
+    <!-- the images above. Without transformations applied, it takes up the entire -->
+    <!-- screen. To achieve the "zoom" animation, this view's bounds are animated -->
+    <!-- from the bounds of the thumbnail button above, to its final laid-out -->
+    <!-- bounds. -->
+
+    <FrameLayout
+        android:id="@+id/backgroundZoomedImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/zoom_image_background_grey"
+        android:visibility="gone" >
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/ivZoomedImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:ignore="ContentDescription" />
+
+</FrameLayout>

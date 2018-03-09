@@ -1,10 +1,30 @@
+ext {
+    appVersions = [
+            id  : "mobiric.fhbsc.weather",
+            code: 7,
+            name: '1.1.0'
+    ]
+    buildVersions = [
+            compileSdk: 27,
+            minSdk    : 17,
+            targetSdk : 26
+    ]
+    libVersions = [
+            supportLib : '27.0.2',
+            aboutLib   : '6.0.1@aar',
+            stetho     : '1.5.0',
+            gson       : '2.8.2',
+            crashlytics: '2.6.5@aar'
+    ]
+}
+
 buildscript {
     repositories {
         maven { url 'https://maven.fabric.io/public' }
     }
 
     dependencies {
-        classpath 'io.fabric.tools:gradle:1.+'
+        classpath 'io.fabric.tools:gradle:1.25.1'
     }
 }
 apply plugin: 'com.android.application'
@@ -15,19 +35,19 @@ repositories {
 }
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.3"
+    compileSdkVersion buildVersions.compileSdk
 
     /* APACHE HTTP - deprecated */
     useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
-        applicationId "mobiric.fhbsc.weather"
-        minSdkVersion 17
-        targetSdkVersion 22
+        applicationId appVersions.id
 
-        versionCode 7
-        versionName "1.1.0"
+        minSdkVersion buildVersions.minSdk
+        //noinspection OldTargetApi
+        targetSdkVersion buildVersions.targetSdk
+        versionCode appVersions.code
+        versionName appVersions.name
 
         // allow Crashlytics configuration based on build type - disable this in debug builds
         buildConfigField("boolean", "CRASHLYTICS", "true")
@@ -71,14 +91,14 @@ android {
 
 dependencies {
     /* Support Libs */
-    compile "com.android.support:support-core-utils:24.2.0"
-    compile 'com.android.support:appcompat-v7:24.2.0'
+    implementation "com.android.support:support-core-utils:${libVersions.supportLib}"
+    implementation "com.android.support:appcompat-v7:${libVersions.supportLib}"
 
     /* GSON */
-    compile 'com.google.code.gson:gson:2.4'
+    implementation "com.google.code.gson:gson:${libVersions.gson}"
 
     /* Crashlytics */
-    compile('com.crashlytics.sdk.android:crashlytics:2.6.5@aar') {
+    implementation("com.crashlytics.sdk.android:crashlytics:${libVersions.crashlytics}") {
         transitive = true;
     }
 }

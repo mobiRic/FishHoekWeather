@@ -1,8 +1,8 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/layoutContainer"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/layoutContainer"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
 
     <!-- MAIN VIEW -->
 
@@ -17,20 +17,20 @@
         android:paddingTop="@dimen/scrollview_fade_pad"
         android:requiresFadingEdge="vertical"
         tools:context=".fragments.TemperatureFragment"
-        tools:ignore="UnusedAttribute" >
+        tools:ignore="UnusedAttribute">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingBottom="@dimen/scrollview_content_pad"
-            android:paddingTop="@dimen/scrollview_content_pad" >
+            android:paddingTop="@dimen/scrollview_content_pad">
 
             <RelativeLayout
                 android:id="@+id/layoutRainText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal" >
+                android:layout_gravity="center_horizontal">
 
                 <TextView
                     android:id="@+id/tvRainTitle"
@@ -39,7 +39,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:text="Temperature is "
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
 
                 <TextView
                     android:id="@+id/tvRainRate"
@@ -49,14 +49,14 @@
                     android:layout_alignBottom="@+id/tvRainTitle"
                     android:layout_toRightOf="@+id/tvRainTitle"
                     android:text="35°"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/layoutRainMeter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal" >
+                android:layout_gravity="center_horizontal">
 
                 <View
                     android:layout_width="wrap_content"
@@ -65,7 +65,7 @@
                     android:layout_alignLeft="@+id/ivRainMeter"
                     android:layout_alignRight="@+id/ivRainMeter"
                     android:layout_alignTop="@+id/ivRainMeter"
-                    android:background="@color/meter_background_grey" />
+                    android:background="@color/meter_background_grey"/>
 
                 <View
                     android:id="@+id/vRainBlue"
@@ -75,7 +75,7 @@
                     android:layout_alignLeft="@+id/ivRainMeter"
                     android:layout_alignRight="@+id/ivRainMeter"
                     android:layout_alignTop="@+id/ivRainMeter"
-                    android:background="@color/thermometer_red" />
+                    android:background="@color/thermometer_red"/>
 
                 <ImageView
                     android:id="@+id/ivRainMeter"
@@ -83,7 +83,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:src="@drawable/thermometer"
-                    tools:ignore="ContentDescription" />
+                    tools:ignore="ContentDescription"/>
             </RelativeLayout>
 
             <TextView
@@ -92,7 +92,7 @@
                 android:layout_gravity="center_horizontal"
                 android:paddingTop="@dimen/activity_vertical_margin"
                 android:text="24 hour temperature"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
 
             <ImageView
                 android:id="@+id/ivDayRain"
@@ -103,7 +103,7 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:src="@drawable/daytempdew"
-                tools:ignore="ContentDescription" />
+                tools:ignore="ContentDescription"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -111,7 +111,7 @@
                 android:layout_gravity="center_horizontal"
                 android:paddingTop="@dimen/activity_vertical_margin"
                 android:text="7 day temperature"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
 
             <ImageView
                 android:id="@+id/ivMonthRain"
@@ -122,7 +122,7 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:src="@drawable/weektempdew"
-                tools:ignore="ContentDescription" />
+                tools:ignore="ContentDescription"/>
         </LinearLayout>
     </ScrollView>
 
@@ -138,7 +138,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/zoom_image_background_grey"
-        android:visibility="gone" >
+        android:visibility="gone">
     </FrameLayout>
 
     <ImageView
@@ -146,6 +146,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"/>
 
 </FrameLayout>

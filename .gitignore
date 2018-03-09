@@ -13,3 +13,4 @@ sh.exe.stackdump
 
 /keystore.properties
 /extras/key/*.keystore
+extras/fabric/beta/distribution.txt

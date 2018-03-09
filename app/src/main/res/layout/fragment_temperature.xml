@@ -65,24 +65,17 @@
                     android:layout_alignLeft="@+id/ivRainMeter"
                     android:layout_alignRight="@+id/ivRainMeter"
                     android:layout_alignTop="@+id/ivRainMeter"
-                    android:background="@drawable/meter_background"/>
+                    android:background="@color/meter_background_grey"/>
 
-                <FrameLayout
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
+                <View
+                    android:id="@+id/vRainBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignBottom="@+id/ivRainMeter"
                     android:layout_alignLeft="@+id/ivRainMeter"
                     android:layout_alignRight="@+id/ivRainMeter"
                     android:layout_alignTop="@+id/ivRainMeter"
-                    android:padding="16dp">
-
-                    <View
-                        android:id="@+id/vRainBlue"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/thermometer_red"/>
-                </FrameLayout>
-
+                    android:background="@color/thermometer_red"/>
 
                 <ImageView
                     android:id="@+id/ivRainMeter"
